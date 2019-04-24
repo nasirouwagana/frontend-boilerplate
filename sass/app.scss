@@ -1,0 +1,24 @@
+/**
+ * If you want to update or override Bootstrap default components CSS behavior,
+ * we need to make a copy of original SCSS files from ./node_modules/bootstrap/scss to ./sass.
+ * And then, we can add your changes.
+ * When updating original SCSS files, we need to follow
+ * the order each files are included in ./node_modules/bootstrap/scss/bootstrap.scss
+ */
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Buttons
+@import 'buttons';
+
+@import 'album';
+
+// Custom CSS
+@import 'style';
